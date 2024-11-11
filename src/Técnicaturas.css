@@ -1,0 +1,99 @@
+.tecnicaturas {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.electronica{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.electronica img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.texto-electronica{
+    max-width: 400px;
+    width: 100%;
+    background-color: #FFF9C4;
+    padding: 10px;
+    text-align: left;
+}
+
+.texto-electronica h2{
+    margin-left: 3%;
+}
+
+.texto-electronica p{
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.electromecanica{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.electromecanica img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.texto-electromecanica{
+    max-width: 400px;
+    width: 100%;
+    background-color: #FFF9C4;
+    padding: 10px;
+    text-align: left;
+}
+
+.texto-electromecanica h2{
+    margin-left: 3%;
+}
+
+.texto-electromecanica p{
+    margin-top: 1%;
+    margin-left: 3%;
+}
+
+.introduccion-tec{
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80%;
+    padding: 5vw;
+    text-align: center;
+}
+
+.introduccion-tec h2 {
+    font-family: Georgia, Serif;
+    font-size: 2.5rem;
+}
+
+.introduccion-tec p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.link{
+    text-align: end;
+}
+
+.link a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 800;
+    
+}

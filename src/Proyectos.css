@@ -1,0 +1,44 @@
+.proyectos {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-p{
+    flex: 1;
+}
+
+.content-p h1 {
+    text-align: center;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+.contenedor-proyectos-ciclo-basico, .contenedor-proyectos-electromecanica,.contenedor-proyectos-electronica{
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra los elementos internos */
+}
+
+.tit {
+    background-color: #aacaf7; /* Color celeste claro */
+    width: 100%;
+    top:0;
+    margin-bottom: 20px;
+    padding: 10px; /* Espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0; /* Eliminar márgenes */
+    text-align: center; /* Centrar el texto */
+}
+
+.proyectos-ciclo-basico,
+.proyectos-area-electronica, .proyectos-area-electromecanica {
+    width: 80%; /* Establece el ancho al 80% */
+    margin: 20px auto; /* Centra el cuadro con un margen automático */
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid #729EDD; /* Borde */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro */
+}

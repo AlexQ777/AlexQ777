@@ -1,0 +1,18 @@
+.map-container {
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 450px; /* Máximo ancho en pantallas grandes */
+    margin: 0 auto; /* Centra el mapa horizontalmente */
+    border: 2px solid #729EDD; /* Borde alrededor del mapa */
+}
+
+.responsive-map {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: 300px; /* Altura fija */
+    border: none; /* Sin borde adicional */
+}
+
+@media (max-width: 400px) {
+    .responsive-map {
+        height: 200px; /* Altura ajustada para pantallas pequeñas */
+    }
+}

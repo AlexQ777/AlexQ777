@@ -1,0 +1,124 @@
+.cont-a {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.fff-a {
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.5rem; /* Tamaño base para pantallas grandes */
+}
+
+.app-a {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.content-a {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.texto-a {
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.texto-a h1 {
+    font-family: Georgia, Serif;
+    font-size: 250%;
+    margin-bottom: 1rem;
+}
+
+.texto-a p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    max-width: 100%; 
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.carousel-a {
+    width: 100%;
+    height: 30%;
+}
+
+.m-v-v-a {
+    display: flex;          
+    justify-content: space-between; 
+    gap: 20px;                
+    padding: 20px;     
+}
+
+.mision-a, .vision-a, .valor-a {
+    flex: 1;         
+    background-color: white;   
+    padding: 20px;        
+    border-radius: 10px;       
+    box-shadow: 0 4px 8px; 
+    text-align: center;    
+    height: 50%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mision-a h1, .vision-a h1, .valor-a h1 {
+    font-size: 1.5rem;        
+    margin-bottom: 10px;       
+}
+
+.mision-a p, .vision-a p, .valor-a p {
+    font-size: 1rem;           
+    line-height: 1.5;          
+    margin: 0;
+}
+/* Media query corregida */
+@media (max-width: 768px) {
+    .fff-a {
+        font-size: 1rem; /* Tamaño de fuente para pantallas medianas */
+    }
+    .texto-a h1 {
+        font-size: 1.9rem; /* Tamaño de fuente para pantallas medianas */
+    }
+
+    .texto-a p {
+        font-size: 1rem; /* Tamaño de fuente para pantallas pequeñas */
+    }
+    .mision-a h1, .vision-a h1, .valor-a h1 {
+        font-size: 1.2rem; /* Tamaño de fuente para tarjetas en pantallas pequeñas */
+    }
+
+    .mision-a p, .vision-a p, .valor-a p {
+        font-size: 0.9rem; /* Tamaño de fuente para párrafos en tarjetas */
+    }
+
+    .m-v-v-a {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .texto-a h1 {
+        font-size: 100%; /* Ajusta el tamaño de la fuente */
+        margin-bottom: 1rem;
+    }
+}
+
+
+   

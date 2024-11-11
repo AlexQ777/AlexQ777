@@ -1,0 +1,66 @@
+/* Dropdown.module.css */
+
+.dropdown_wrapper {
+  position: relative;
+}
+
+.dropdown_activator {
+  /* Estilos para el botón del dropdown */
+  background: #729EDD;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.dropdown_item_list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000; /* Asegúrate de que tenga un z-index alto */
+}
+
+
+.dropdown_item_list.active {
+  display: block; /* Muestra la lista cuando está activa */
+}
+
+.item_list {
+  padding: 10px;
+}
+
+.item_list a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.item_list a:hover {
+  background: #f0f0f0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Color de la capa de fondo */
+  z-index: 1000; /* Asegura que el overlay esté encima del contenido */
+  display: none; /* Oculta el overlay por defecto */
+}
+
+/* Estilos para mostrar el overlay cuando el menú está abierto */
+.overlay.active {
+  display: block;
+}

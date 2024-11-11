@@ -1,0 +1,240 @@
+.institucion-i {
+    min-height: 100%; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+
+
+.content-i {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 2%;
+    flex-wrap: nowrap; /* Mantiene el diseño en una sola fila en pantallas grandes */
+}
+
+.quienes-somos {
+    width: 25%; /* Ocupa 1/4 de la página */
+    height: auto; 
+    background-color: #aacaf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #4582d8;
+}
+
+h2{
+    font-size: 20px;
+    top:10%;
+    bottom: 2%;
+}
+
+
+.quienes-somos p {
+    line-height: 1.5; /* Interlineado de 1.5 */
+    font-size: 14px;
+}
+
+
+.quienes-somos img{
+    width: 96%;
+}
+
+.ayufanose {
+    display: flex;
+    flex-direction: column; /* Se apilan verticalmente */
+    width: 70%; /* Ocupa 3/4 de la página */
+}
+/*Plan estudio*/
+
+.plan-i {
+    flex: 1; /* Ocupa toda la altura disponible */
+    max-height: 320px;
+    background-color: #aacaf7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.plan-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.carreras {
+    width:40%;
+}
+
+.plan-estudio {
+    width: 30%; 
+}
+
+.carreras h2 {
+    margin-bottom: 20px;
+}
+
+.plan-estudio h2 {
+    margin-bottom: 20px;
+}
+
+.carreras p{
+    padding: 7px 10px; /* Aumentar el tamaño del botón */
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 10%; /* Espaciado entre botones */
+    color: black; /* Color del texto */
+    min-width: 80px;
+}
+
+.button {
+    padding: 7px 10px; /* Aumentar el tamaño del botón */
+    font-size: 16px; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 13%; /* Espaciado entre botones */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid black;
+    background-color: #aacaf7; /* Color de fondo */
+    color: black; /* Color del texto */
+    cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+    min-width: 80px;
+}
+
+.button-container {
+    display: flex; /* Usar flexbox para alinear los botones */
+    flex-direction: column;
+    margin-top: 20px; /* Espacio encima de los botones */
+}
+
+
+/* Mapa */
+
+
+.int-map-i {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.mapp-container {
+    width: 100%;
+    background-color: #aacaf7;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.interes-i {
+    width: 100%; 
+    padding: 20px;
+    background-color: #aacaf7; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black; 
+    margin-right: 10%; /* Espacio entre el área de interés y el mapa */
+}
+
+.interes-i p {
+    line-height: 1.5; /* Interlineado de 1.5 */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+
+/*Modales */
+
+.year-header {
+    background-color: #aacaf7; 
+    text-align: center;
+    border-radius: 5px 5px 0 0; 
+}
+
+.subjects-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Dos columnas: una para horas y otra para materias */
+    gap: 10px; /* Espacio entre columnas */
+    margin-top: 20px;
+}
+
+.hour-subject {
+    display: contents; /* Permite que las columnas se comporten como una sola fila en el grid */
+}
+
+.subjects {
+    flex: 1; 
+    padding: 0;
+}
+.hours {
+    padding-right: 10px; /* Espacio entre horas y materias */
+    text-align: right; 
+}
+
+.hours ul li {
+    margin-bottom: 27px; 
+    height: 20px; 
+    list-style: none;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+}
+.subjects ul li {
+    list-style: none; 
+    padding: 0; 
+    margin-bottom: 29px;
+}
+
+
+@media (max-width: 768px) {
+    .content-i {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .quienes-somos {
+        width: 100%; /* Ocupar todo el ancho */
+        margin-bottom: 20px; /* Espacio entre secciones */
+    }
+
+    .ayufanose {
+        width: 100%; /* Ocupar todo el ancho */
+        margin-bottom: 20px; /* Espacio entre secciones */
+    }
+
+    .plan-i {
+        width: 100%; /* Ocupar todo el ancho */
+        margin-bottom: 20px; /* Espacio entre secciones */
+    }
+
+    .int-map-i {
+        flex-direction: column; /* Cambia a columna para el mapa */
+    }
+
+    .interes-i {
+        width: 100%; /* Ocupar todo el ancho */
+        margin-bottom: 20px; /* Espacio entre secciones */
+    }
+
+    .mapp-container {
+        width: 100%; /* Asegura que el mapa ocupe todo el ancho */
+    }
+}
+
+@media (max-width: 840px) {
+    .button{
+        margin-bottom: 20%;
+    }
+}
+

@@ -1,0 +1,66 @@
+.footer{
+    background-color: #729EDD;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.del-lado-izquierdo{
+    flex: 1;
+    margin-right: 1.5rem;
+}
+.del-lado-izquierdo h3 {
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.del-lado-izquierdo p {
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.del-lado-derecho{
+    display: flex;
+    gap: 1rem;
+}
+
+.logo{
+    width: 2.5rem;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width: 600px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem; /* Ajustado con rem */
+    }
+
+    .del-lado-izquierdo {
+        width: 60%;
+        margin-right: 2rem; /* Ajustado con rem */
+        margin-bottom: 0;
+    }
+
+    .del-lado-derecho {
+        flex-direction: row; /* Cambiado a fila */
+        gap: 1rem; /* Ajustado con rem */
+        width: 40%;
+        justify-content: flex-end;
+        align-items: center; /* Centra los logos verticalmente */
+    }
+}
+
+@media (min-width: 900px) {
+    .footer {
+        padding: 3rem; /* Ajustado con rem */
+    }
+}
